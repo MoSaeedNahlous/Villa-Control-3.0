@@ -35,11 +35,7 @@ a{
     min-height: 2em;
     padding: 1%;
 }
-nav .nav-container{
-    /* position: fixed;
-    top: 0; 
-    z-index: 4; */
-}
+
 .nav-ul{
     display: flex;
     list-style: none;
