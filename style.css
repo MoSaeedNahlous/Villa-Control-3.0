@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    /* background: #e0e0e0; */
+    background-image: url(./res/images/blury-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container{
+    width: 100%;
+    background-color:lightseagreen ;
+    color: aliceblue;
+    min-height: 2em;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* position: fixed;
+    top: 0; */
+}
+.nav-container1{
+    width: 100%;
+    background-color:lightseagreen ;
+    color: aliceblue;
+    min-height: 2em;
+    padding: 1%;
+}
+nav .nav-container{
+    /* position: fixed;
+    top: 0; 
+    z-index: 4; */
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+.nav-ul li{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 900;
+    font-size: 25px;
+}
+.nav-text{
+    font-size: 25px;
+    margin-left: 3%;
+    vertical-align: baseline;
+    justify-self: flex-start;
+    text-align: left;
+    
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    /* padding-top: 4%; */
+}
+.info-container{
+    
+    width: 25%;
+    padding: 1%;
+}
+
+.info-inner-container{
+    border: 1px grey solid;
+}
+
+.control-container{
+    
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.control-inner-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px grey solid; */
+    
+}
+
+.control-main{
+    display: grid;
+    padding: 1%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: ; */
+    gap:1%;
+    margin-bottom: 2%;
+}
+.info-inner-sec{
+    padding: 2%;
+    
+}
+.rm{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* switch style */
+ /* toggle in label designing */
+        .switch-container{
+            border: 1px grey solid;
+            border-radius: 25px;
+            background-color: rgb(202, 202, 202);
+            padding: 3%;
+            margin: 5%;
+        }
+        .switch-container p{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .toggle {
+            margin-left: 30%;
+            float: none;
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 55px;
+            background-color: rgb(194, 193, 193);
+            border-radius: 30px;
+            border: 2px solid rgb(233, 230, 230);
+            cursor: pointer;
+        }
+
+        /* After slide changes */
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(235, 231, 231);
+            top: 1px;
+            left: 1px;
+            transition: all 0.5s;
+        }
+
+        /* Toggle text */
+       
+
+        /* Checkbox cheked effect */
+        .checkbox:checked+.toggle::after {
+            left: 45px;
+            top: 0px
+        }
+
+        /* Checkbox cheked toggle label bg color */
+        .checkbox:checked+.toggle {
+            background-color: rgb(51, 102, 255);
+        }
+
+        /* Checkbox vanished */
+        .checkbox {
+            display: none;
+        }
+
+.footer-container{
+    width: 100%;
+    background: lightseagreen;
+    padding: 1%;
+
+}
+.footer-text{
+    font-weight: 600;
+    font-size: 22px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    margin: auto;
+    float: none;
+    text-align: center;
+    font-size: 24px;
+    padding: 6%;
+    border-radius: 25px;
+    border:1px grey solid;
+}
+.btn.on:focus{
+    background-color: rgb(0, 194, 0);
+    border: none;
+    color: white;
+}
+.btn.off:focus{
+    background-color: rgb(194, 0, 0);
+    border: none;
+    color: white;
+}
+@media only screen and (max-width: 1258px){
+.control-main{
+        grid-template-columns: 1fr 1fr 1fr 1fr !important ;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+
+    .control-main{
+        grid-template-columns: 1fr 1fr 1fr !important ;
+    }
+
+}
+
+@media only screen and (max-width: 788px){
+
+    .control-main{
+        grid-template-columns: 1fr 1fr !important ;
+    }
+    .last{
+        margin-bottom: 5%;
+    }
+
+}
+@media only screen and (max-width: 368px){
+
+    .control-main{
+        grid-template-columns: 1fr  !important ;
+        
+    }
+    .last{
+        margin-bottom: 30%;
+    }
+    
+
+}
